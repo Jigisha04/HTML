@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Recipe Collection</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+        }
+        header {
+            background-color: #ff6347;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+        }
+        header p {
+            margin: 5px 0 0;
+        }
+        .profile-image {
+            text-align: center;
+            margin: 20px 0;
+        }
+        .profile-image img {
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+        }
+        nav {
+            margin: 20px;
+            padding: 20px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        nav h2 {
+            color: #ff6347;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+        nav ul li {
+            margin: 10px;
+            font-size: 1.2em;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: #ff6347;
+            padding: 10px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+        nav ul li a:hover {
+            background-color: #ff6347;
+            color: white;
+        }
+        section {
+            margin: 20px;
+            padding: 20px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        section h2 {
+            color: #ff6347;
+        }
+        .category-images {
+            display: flex;
+            flex-wrap: nowrap;
+            overflow-x: auto;
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+        .category-images img {
+            height: 150px;
+            border-radius: 8px;
+            flex-shrink: 0;
+        }
+        .featured-recipe h3, .detailed-recipe h3 {
+            margin-top: 0;
+        }
+        .contact p {
+            margin: 5px 0;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>My Recipe Collection</h1>
+    <p><em>Delicious recipes for every occasion</em></p>
+</header>
+
+<div class="profile-image">
+    <img src="https://www.capecrystalbrands.com/cdn/shop/articles/unleash-your-culinary-artistry-the-ultimate-foodies-guide-304381.jpg?v=1699238486" alt="Profile Image">
+</div>
+
+<nav>
+    <h2>Recipe Categories</h2>
+    <ul>
+        <li><a href="#appetizers">Appetizers</a></li>
+        <li><a href="#main-courses">Main Courses</a></li>
+        <li><a href="#desserts">Desserts</a></li>
+        <li><a href="#snacks">Snacks</a></li>
+        <li><a href="#beverages">Beverages</a></li>
+    </ul>
+</nav>
+
+<main>
+    <section id="appetizers">
+        <h2>Appetizers</h2>
+        <div class="category-images">
+            <img src="https://media.istockphoto.com/id/923784110/photo/canapes-for-party.webp?a=1&b=1&s=612x612&w=0&k=20&c=BIjTPv2hqxeMlF-ui331vsXKCQvDb4IsIFnDW2MZF0A=" alt="Appetizer 1">
+            <img src="https://media.istockphoto.com/id/2131795304/photo/various-sweet-desserts-appetizers-and-finger-foods-are-arranged-on-a-buffet-table-ready-for.webp?a=1&b=1&s=612x612&w=0&k=20&c=26CHbANJHAVT3Zl3i-kp87JnBX3fA4hD0HusdVqW8-U=" alt="Appetizer 2">
+            <img src="https://media.istockphoto.com/id/1029200760/photo/table-decoration-of-beautiful-tasty-food-on-celebration-day.webp?a=1&b=1&s=612x612&w=0&k=20&c=RB8uNY47mh4-lggibjk1qVHq0RZzxFfQa049CnfgQUM=" alt="Appetizer 3">
+            <img src="https://media.istockphoto.com/id/481765835/photo/homemade-italian-bruschetta-appetizer.webp?a=1&b=1&s=612x612&w=0&k=20&c=mfFOa8s1WzDqmtqQh_v4vZpKjrY0MtbxrtTzRLFzflA=" alt="Appetizer 4">
+        </div>
+        <p><strong>Explore a variety of delicious appetizers</strong> to start your meal right.</p>
+    </section>
+
+    <section id="main-courses">
+        <h2>Main Courses</h2>
+        <div class="category-images">
+            <img src="https://media.istockphoto.com/id/1279889705/photo/table-top-view-of-indian-food.jpg?s=612x612&w=0&k=20&c=MNW2yRr91IskdWl1I91s-BPRzQjNPF_vkE1oVKFkco8=" alt="Main Course 1">
+            <img src="https://media.istockphoto.com/id/1418100766/photo/group-of-south-indian-food-like-masala-dosa-idli-wada-or-vada-sambar-served-over-banana-leaf.jpg?s=612x612&w=0&k=20&c=F72aBh8w_Wtx6XoFmcBllkp0_zKzMClzJGB-YFM0lYE=" alt="Main Course 2">
+            <img src="https://media.istockphoto.com/id/1323627708/video/various-indian-dishes-on-a-table-spicy-chicken-tikka-masala-in-iron-pan.jpg?s=640x640&k=20&c=Nb11C2GBm2bFy7hkwL4eTobnIvQ2oC-ZMJfGjZ4Mq3g=" alt="Main Course 3">
+            <img src="https://media.istockphoto.com/id/667918412/photo/chicken-tikka-masala.jpg?s=612x612&w=0&k=20&c=UWYBW5e_VnLtGNmRHTZkFLhozE732tuNtUQ9NRmo4TE=" alt="Main Course 4">
+        </div>
+        <p><strong>Find hearty and satisfying main courses</strong> for any occasion.</p>
+    </section>
+
+    <section id="desserts">
+        <h2>Desserts</h2>
+        <div class="category-images">
+            <img src="https://media.istockphoto.com/id/139885298/photo/baked-goods.jpg?s=612x612&w=0&k=20&c=jCRsN7QOZ8Lh2SWP_uVy-2ydi1mF2jZzA-i44EilGNM=" alt="Dessert 1">
+            <img src="https://media.istockphoto.com/id/139885298/photo/baked-goods.jpg?s=612x612&w=0&k=20&c=jCRsN7QOZ8Lh2SWP_uVy-2ydi1mF2jZzA-i44EilGNM=" alt="Dessert 2">
+            <img src="https://media.istockphoto.com/id/139885298/photo/baked-goods.jpg?s=612x612&w=0&k=20&c=jCRsN7QOZ8Lh2SWP_uVy-2ydi1mF2jZzA-i44EilGNM=" alt="Dessert 3">
+            <img src="https://media.istockphoto.com/id/139885298/photo/baked-goods.jpg?s=612x612&w=0&k=20&c=jCRsN7QOZ8Lh2SWP_uVy-2ydi1mF2jZzA-i44EilGNM=" alt="Dessert 4">
+        </div>
+        <p><strong>Indulge in sweet treats</strong> and decadent desserts.</p>
+    </section>
+
+    <section id="snacks">
+        <h2>Snacks</h2>
+        <div class="category-images">
+            <img src="https://media.istockphoto.com/id/1149135424/photo/group-of-sweet-and-salty-snacks-perfect-for-binge-watching.jpg?s=612x612&w=0&k=20&c=YAVqRyUJgj_nXpltYUPpaW_PYtd4v2TC5Mo0DtVFuoo=" alt="Snack 1">
+            <img src="https://media.istockphoto.com/id/1149135424/photo/group-of-sweet-and-salty-snacks-perfect-for-binge-watching.jpg?s=612x612&w=0&k=20&c=YAVqRyUJgj_nXpltYUPpaW_PYtd4v2TC5Mo0DtVFuoo=" alt="Snack 2">
+            <img src="https://media.istockphoto.com/id/1149135424/photo/group-of-sweet-and-salty-snacks-perfect-for-binge-watching.jpg?s=612x612&w=0&k=20&c=YAVqRyUJgj_nXpltYUPpaW_PYtd4v2TC5Mo0DtVFuoo=" alt="Snack 3">
+            <img src="https://media.istockphoto.com/id/1149135424/photo/group-of-sweet-and-salty-snacks-perfect-for-binge-watching.jpg?s=612x612&w=0&k=20&c=YAVqRyUJgj_nXpltYUPpaW_PYtd4v2TC5Mo0DtVFuoo=" alt="Snack 4">
+        </div>
+        <p><strong>Enjoy a variety of quick and tasty snacks.</strong></p>
+    </section>
+
+    <section id="beverages">
+        <h2>Beverages</h2>
+        <div class="category-images">
+            <img src="https://media.istockphoto.com/id/453010753/photo/three-fruit-juice-glasses-surrounded-by-colorful-fruits.jpg?s=612x612&w=0&k=20&c=Uv8afaSP3GFNB5qG3ZXgzZXBhLlGFFdR27hMOGHO_2k=" alt="Beverage 1">
+            <img src="https://media.istockphoto.com/id/453010753/photo/three-fruit-juice-glasses-surrounded-by-colorful-fruits.jpg?s=612x612&w=0&k=20&c=Uv8afaSP3GFNB5qG3ZXgzZXBhLlGFFdR27hMOGHO_2k=" alt="Beverage 2">
+            <img src="https://media.istockphoto.com/id/453010753/photo/three-fruit-juice-glasses-surrounded-by-colorful-fruits.jpg?s=612x612&w=0&k=20&c=Uv8afaSP3GFNB5qG3ZXgzZXBhLlGFFdR27hMOGHO_2k=" alt="Beverage 3">
+            <img src="https://media.istockphoto.com/id/453010753/photo/three-fruit-juice-glasses-surrounded-by-colorful-fruits.jpg?s=612x612&w=0&k=20&c=Uv8afaSP3GFNB5qG3ZXgzZXBhLlGFFdR27hMOGHO_2k=" alt="Beverage 4">
+        </div>
+        <p><strong>Quench your thirst</strong> with refreshing beverages.</p>
+    </section>
+
+    <section class="featured-recipe">
+        <h2>Featured Recipe: Chocolate Cake</h2>
+        <h3>Ingredients:</h3>
+        <ul>
+            <li>2 cups sugar</li>
+            <li>1-3/4 cups flour</li>
+            <li>3/4 cup cocoa powder</li>
+            <li>1-1/2 teaspoons baking powder</li>
+            <li>1-1/2 teaspoons baking soda</li>
+            <li>1 teaspoon salt</li>
+            <li>2 eggs</li>
+            <li>1 cup milk</li>
+            <li>1/2 cup vegetable oil</li>
+            <li>2 teaspoons vanilla extract</li>
+            <li>1 cup boiling water</li>
+        </ul>
+        <h3>Cooking Time:</h3>
+        <p>35 minutes</p>
+    </section>
+    
+    <section class="detailed-recipe">
+        <h2>Detailed Recipe Information: Chocolate Cake</h2>
+        <h3>Instructions:</h3>
+        <ol>
+            <li>Preheat the oven to 350°F (175°C).</li>
+            <li>In a large bowl, stir together the sugar, flour, cocoa, baking powder, baking soda, and salt.</li>
+            <li>Add the eggs, milk, oil, and vanilla, and beat on medium speed for 2 minutes.</li>
+            <li>Stir in the boiling water (batter will be thin).</li>
+            <li>Pour the batter into prepared pans.</li>
+            <li>Bake for 30 to 35 minutes, or until a toothpick inserted in the center comes out clean.</li>
+            <li>Cool in pans for 10 minutes, then remove to wire racks to cool completely.</li>
+        </ol>
+    </section>
+
+    <aside class="tips-resources">
+        <h2>Additional Cooking Tips & Resources</h2>
+        <ul>
+            <li><strong>Tip:</strong> Use room temperature ingredients for a smoother batter.</li>
+            <li><a href="https://www.howtocook.recipes/" target="_blank">More Cooking Tips</a></li>
+        </ul>
+    </aside>
+
+    <section class="contact">
+        <h2>Contact Information</h2>
+        <p>Email: jigisha@example.com</p>
+    </section>
+            
+</body>
+</html> 

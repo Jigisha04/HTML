@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration Form</title>
+    <style>
+        body {
+            background-color: #ff4d4d;
+            font-family: Arial, sans-serif;
+        }
+        .form-container {
+            width: 600px;
+            margin: 0 auto;
+        }
+        table {
+            width: 100%;
+            border: 2px dashed black;
+            padding: 10px;
+            background-color: #ff9999;
+        }
+        h2 {
+            text-align: center;
+            color: blue;
+        }
+        td {
+            padding: 8px;
+        }
+        input[type="text"], input[type="email"], select, textarea {
+            width: 100%;
+            padding: 5px;
+            box-sizing: border-box;
+        }
+        input[type="submit"], input[type="reset"] {
+            width: 100px;
+            padding: 8px;
+            margin: 10px 5px;
+            cursor: pointer;
+        }
+        input[type="radio"] {
+            margin: 0 5px;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Student Registration Form Using Table in HTML</h2>
+
+    <div class="form-container">
+        <form action="submit_form.php" method="post">
+            <table>
+                <tr>
+                    <td>First Name</td>
+                    <td><input type="text" name="first_name" maxlength="50" required></td>
+                    <td>(Max 50 Characters Allowed)</td>
+                </tr>
+                <tr>
+                    <td>Last Name</td>
+                    <td><input type="text" name="last_name" maxlength="50" required></td>
+                    <td>(Max 50 Characters Allowed)</td>
+                </tr>
+                <tr>
+                    <td>Email ID</td>
+                    <td><input type="email" name="email" required></td>
+                </tr>
+                <tr>
+                    <td>Mobile Number</td>
+                    <td><input type="text" name="mobile" pattern="[0-9]{10}" title="10 Digits Allowed" required></td>
+                    <td>(10 Digits Allowed)</td>
+                </tr>
+                <tr>
+                    <td>Gender</td>
+                    <td>
+                        <input type="radio" name="gender" value="Male" required> Male
+                        <input type="radio" name="gender" value="Female" required> Female
+                    </td>
+                </tr>
+                <tr>
+                    <td>Date of Birth (DOB)</td>
+                    <td>
+                        <select name="day" required>
+                            <option value="">Day</option>
+                            <!-- Options for day -->
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                            <option value="11">11</option>
+                            <option value="12">12</option>
+                            <option value="13">13</option>
+                            <option value="14">14</option>
+                            <option value="15">15</option>
+                            <!-- More day options -->
+                        </select>
+                        <select name="month" required>
+                            <option value="">Month</option>
+                            <option value="1">January</option>
+                            <option value="2">February</option>
+                            <!-- More month options -->
+                        </select>
+                        <select name="year" required>
+                            <option value="">Year</option>
+                            <option value="2000">2000</option>
+                            <option value="2001">2001</option>
+                            <!-- More year options -->
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Address</td>
+                    <td><textarea name="address" rows="4" required></textarea></td>
+                </tr>
+                <tr>
+                    <td>City</td>
+                    <td><input type="text" name="city" maxlength="50" required></td>
+                    <td>(Max 50 Characters Allowed)</td>
+                </tr>
+                <tr>
+                    <td>Pin Code</td>
+                    <td><input type="text" name="pin_code" maxlength="6" pattern="[0-9]{6}" required></td>
+                    <td>(Max 6 Numbers Allowed)</td>
+                </tr>
+                <tr>
+                    <td>State</td>
+                    <td><input type="text" name="state" maxlength="50" required></td>
+                    <td>(Max 50 Characters Allowed)</td>
+                </tr>
+                <tr>
+                    <td>Country</td>
+                    <td><input type="text" name="country" value="India" required></td>
+                </tr>
+                <tr>
+                    <td>Hobbies</td>
+                    <td>
+                        <input type="checkbox" name="hobby" value="Drawing"> Drawing
+                        <input type="checkbox" name="hobby" value="Singing"> Singing
+                        <input type="checkbox" name="hobby" value="Dancing"> Dancing
+                        <input type="checkbox" name="hobby" value="Sketching"> Sketching
+                        <input type="checkbox" name="hobby_other" value="Others"> Others
+                        <input type="text" name="other_hobby" maxlength="50" placeholder="Ex: Teaching">
+                    </td>
+                </tr>
+                <tr>
+                    <td>Qualification</td>
+                    <td>
+                        <input type="checkbox" name="qualification" value="10th"> High School(10th)
+                        <input type="checkbox" name="qualification" value="12th"> Higher School(12th)
+                        <input type="checkbox" name="qualification" value="Bachelors"> Graduation(Bachelors)
+                        <input type="checkbox" name="qualification" value="Masters"> Post Graduation(Masters)
+                        <input type="checkbox" name="qualification" value="Phd"> Phd
+                    </td>
+                </tr>
+                <tr>
+                    <td>Courses Applied For</td>
+                    <td>
+                        <input type="radio" name="course" value="BCA" required> BCA
+                        <input type="radio" name="course" value="BCom" required> B.Com
+                        <input type="radio" name="course" value="BSc" required> B.Sc
+                        <input type="radio" name="course" value="BA" required> BA
+                        <input type="radio" name="course" value="MCA" required> MCA
+                        <input type="radio" name="course" value="MCom" required> M.Com
+                        <input type="radio" name="course" value="MSc" required> M.Sc
+                        <input type="radio" name="course" value="MA" required> MA
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2" style="text-align: center;">
+                        <input type="submit" value="Submit">
+                        <input type="reset" value="Reset">
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </div>
+
+</body>
+</html>
